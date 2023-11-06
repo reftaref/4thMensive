@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Zoom On Scroll | Parallax Effect | HTML, CSS & JQuery</title>
+      <link rel="stylesheet" href="main.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="hero-back">
+            <img src="hero-front.png" alt="">
+      </div>
+      <div class="content">
+            <h1>Happy 4th Mensiversarry, Nate-ku!</h1>
+            <p>Gak kerasa yaa 123 hari kita lalui bersama. Hidupku sebelumnya bak sebuah langit yang gelap sampai kamu, bintangku yang paling terang, muncul. Hadirnya kamu di sisiku sungguhan mengubah hidupku yang tadinya sunyi dan sepi menjadi penuh tawa. Walau kadangkala badai hebat menerjang hariku, kamu selalu di sampingku, memelukku erat dan menyelamatkanku agar aku tidak tenggelam dan hanyut di dalamnya. Dalam gemerlap malam yang sunyi, kau adalah bintang yang selalu bersinar di langit hatiku. Kau adalah cahaya yang selalu terangi jalanku yang begitu gelap. Tiap momen yang kita lewati bersama adalah perjalanan yang tak ternilai. Dalam pelukanmu, aku menemukan ketenangan. Dalam senyumanmu, aku menemukan kebahagiaan. Dan dalam kasih sayangmu, aku menemukan makna sejati dalam hidup ini. </p>
+            <p>Cintamu adalah pusat dalam kehidupanku, sebuah magnet yang selalu menarik diriku kembali ke arahmu setiap kali aku tersesat.</p>
+            <p>Setiap saat yang kita lewati bersama adalah seperti bait-bait indah dalam syair cinta yang tak pernah berakhir. Dalam sentuhan lembutmu, kau membawa ketenangan dan keajaiban. Kau menginspirasi aku untuk menjadi yang terbaik dan mendukung mimpiku dengan cinta tak terbatas. Kau adalah api dalam hatiku yang tak pernah padam, memanaskan setiap hari dalam perjalanan kita bersama. Bersamamu, kehidupan ini terasa lebih berwarna dan berarti.</p>
+            <p>Hari ini, kita merayakan keindahan perjalanan kita yang telah melintasi empat bulan yang penuh makna. Waktu yang mungkin terasa singkat, namun cinta yang aku rasakan begitu mendalam, layaknya sungai yang tak pernah berhenti mengalir, mengisi seluruh relung hatiku dengan kehangatan dan kebahagiaan. Setiap hari bersamamu adalah petualangan yang seru, rasanya seperti berjalan di bawah sinar matahari di tengah hutan yang rimbun, dan aku menemukan keajaiban di setiap sudutnya. Setiap kata yang kita bagikan, setiap tawa yang kita rasakan bersama, dan setiap pelukan yang kita berikan adalah kenangan yang akan terpatri dalam hatiku selamanya. Kasih sayangmu adalah lirik yang selalu terdengar dalam lagu kehidupanku, sebuah melodi yang mengalir begitu indah, seperti aliran sungai yang tak pernah berhenti mengalir. Dalam keindahan senja yang merayap di langit, aku merenung, dan dalam setiap serunai angin, hanya satu pikiran yang mengisi benakku - betapa sangat aku mencintaimu, Nate-ku sayang. Aku mencintaimu dengan segenap jiwaku, dan setiap hela nafasku hanya terasa sempurna ketika kau berada di sisiku. Selamat tanggal 7 yang keempat ya, cintaku. Aku tak sabar untuk menulis setiap bab selanjutnya bersamamu, karena bersamamu, setiap cerita adalah petualangan ajaib yang kurasakan.</p>
+            <p>I love you, with whole of my heart.</p>
+      </div>
+
+      <script type="text/javascript">
+
+      $(window).scroll(function() {
+            var scrollPos = $(this).scrollTop();
+            $(".hero-back").css({
+                  'background-size' : 100 + scrollPos + '%'      
+            });
+      });
+
+      </script>
+</body>
+</html>
